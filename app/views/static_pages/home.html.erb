@@ -1,11 +1,51 @@
-	<div class="container">
+	<div id="wrapper">
 		<div id="iphad">
 			<div id="screen">
 					<div id="icon-area">
-						<%= image_tag 'conga.jpg'%>
-						<img src="img/fb.jpg" />
-						<img src="img/music.jpg" />
+						<div class='icon pandatime'>
+							<%= link_to (image_tag (image_path ("panda.png")), :class => 'shrink'), '#pandatime' %><br />
+							<span class='icon-text'>Panda Time</span>
+						</div>
+						<div class='icon'>
+							<%=link_to (image_tag (image_path ("winston.png")), :class => 'shrink winston')  %>
+							<span class='icon-text'>Winston</span>
+						</div>
+						<div class='icon'>
+							<%=link_to (image_tag (image_path ("kellyrage.png")), :class => 'shrink iconify'), 'http://kellyrage.william-lee.com', :target => '_blank'  %>
+							<span class='icon-text'>Kelly Rage</span>
+						</div>
 					</div>
+					<!-- Begin: CSS Dock Code -->
+					<div class="dock">
+						<ul>
+							
+							<li id="listen">
+								<a href="#listen">
+									<em><span>Album</span></em>
+									<%= link_to (image_tag (image_path "conga.png"), alt: "conga", class: 'iconify'), 'http://www.superiphase3ds.bandcamp.com', :target => '_blank' %>
+								</a>
+							</li>
+							<li id="fb">
+								<a href="#fb">
+									<em><span>Address Book</span></em>
+									<%= image_tag  image_path("fb.png"), alt: "mail" %>
+								</a>
+							</li>
+							<li id="iphoto">
+								<a href="#iphoto">
+									<em><span>iPhoto</span></em>
+									<%= image_tag  image_path("twitter_icon.gif"), alt: "mail" %>
+								</a>
+							</li>
+							<li id="mail">
+								<a href="mailto:keyboardstand:william-lee.com">
+									<em><span>Mail</span></em>
+									<%= image_tag (image_path "icon-mail.png"), alt: "mail" %>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<!-- End: CSS Dock Code -->
 			</div>
 		</div>
 	</div>

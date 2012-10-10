@@ -3,7 +3,7 @@ Superiphase3ds::Application.routes.draw do
 
   match 'home' => 'static_pages#home', :as => :home
   
-
+  root :to => 'static_pages#home'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

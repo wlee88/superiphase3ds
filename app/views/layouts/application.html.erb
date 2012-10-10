@@ -1,14 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Super iPhase 3DS</title>
+  <title>Super iPhase 3DS - iPhad</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-</head>
-<body>
+  <style type="text/css">
+  	#screen{
+		background: black url(<%= generate_bg_name %>) no-repeat center;
+	}
+  </style>
 
-<%= yield %>
+	</head>
+<body>
+	<audio id='oink' src="http://superiphase3ds.heroku.com/assets/oink.wav"></audio>
+	
+	<div class="container">
+		<%= yield %>
+	</div>
 
 </body>
 </html>
