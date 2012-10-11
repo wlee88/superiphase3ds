@@ -1,18 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Super iPhase 3DS - iPhad</title>
+  <title>Super iPhasePad 3DS</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+
+ 
   <style type="text/css">
   	#screen{
 		background: black url(<%= generate_bg_name %>) no-repeat center;
 	}
   </style>
 
+
+ 	<% if session[:user_has_visited] != 'derppp' %>	
+		
+		<% session[:user_has_visited] = 'derppp' %>
+	<% else %>
+		<script>
+
+		$(document).ready(function(){
+				$('#myModal').modal('hide');
+			});
+		</script>
+	<% end %>
 	</head>
 <body>
+	
+	 <%= render 'modal'%>
+
+
 	<div class="container">
 	<audio id='oink' src="http://superiphase3ds.herokuapp.com/assets/oink.wav"></audio>
 			<%= yield %>

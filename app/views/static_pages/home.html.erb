@@ -1,13 +1,14 @@
+<h1 class='title'>Super iPhasePad 3DS</h1>
 	<div id="wrapper">
 		<div id="iphad">
 			<div id="screen">
 					<div id="icon-area">
 						<div class='icon pandatime'>
-							<%= link_to (image_tag (image_path ("panda.png")), :class => 'shrink'), home_path + '/#pandatime' %><br />
+							<%= link_to (image_tag (image_path ("panda.png")), :class => 'shrink', :id => 'pandatime'), '#pandatime' %><br />
 							<span class='icon-text'>Panda Time</span>
 						</div>
 						<div class='icon'>
-							<%=link_to (image_tag (image_path ("winston.png")), :class => 'shrink winston'),home_path + '#winston'  %>
+							<%=link_to (image_tag (image_path ("winston.png")), :class => 'shrink winston', :id => 'winston'), '#winston'  %>
 							<span class='icon-text'>Winston</span>
 						</div>
 						<div class='icon'>

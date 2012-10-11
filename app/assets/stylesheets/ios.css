@@ -1,0 +1,2 @@
+div#iosAlert{display: block;} 
+div#iosAlertBox{ -webkit-animation-duration:400ms;-webkit-animation-name:pop;-webkit-animation-timing-function:ease-in-out}@-webkit-keyframes pop{0%{-webkit-transform:scale3d(0.5, 0.5, 1)}45%{-webkit-transform:scale3d(1.07, 1.07, 1)}70%{-webkit-transform:scale3d(0.95, 0.95, 1)}100%{-webkit-transform:scale3d(1, 1, 1)}}
