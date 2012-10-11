@@ -3,11 +3,11 @@
 			<div id="screen">
 					<div id="icon-area">
 						<div class='icon pandatime'>
-							<%= link_to (image_tag (image_path ("panda.png")), :class => 'shrink'), '#pandatime' %><br />
+							<%= link_to (image_tag (image_path ("panda.png")), :class => 'shrink'), home_path + '/#pandatime' %><br />
 							<span class='icon-text'>Panda Time</span>
 						</div>
 						<div class='icon'>
-							<%=link_to (image_tag (image_path ("winston.png")), :class => 'shrink winston')  %>
+							<%=link_to (image_tag (image_path ("winston.png")), :class => 'shrink winston'),home_path + '#winston'  %>
 							<span class='icon-text'>Winston</span>
 						</div>
 						<div class='icon'>
@@ -27,20 +27,20 @@
 							</li>
 							<li id="fb">
 								<a href="#fb">
-									<em><span>Address Book</span></em>
-									<%= image_tag  image_path("fb.png"), alt: "mail" %>
+									<em><span>Facebook</span></em>
+									<%= link_to (image_tag  image_path("fb.png"), alt: "mail"), 'http://www.facebook.com/iphase3ds', :target => '_blank' %>
 								</a>
 							</li>
-							<li id="iphoto">
-								<a href="#iphoto">
+							<li id="twitter">
+								<a href="#twitter">
 									<em><span>iPhoto</span></em>
 									<%= image_tag  image_path("twitter_icon.gif"), alt: "mail" %>
 								</a>
 							</li>
 							<li id="mail">
-								<a href="mailto:keyboardstand:william-lee.com">
+								<a href="#mail">
 									<em><span>Mail</span></em>
-									<%= image_tag (image_path "icon-mail.png"), alt: "mail" %>
+									<%= link_to (image_tag (image_path "icon-mail.png"), alt: "mail"), 'mailto:keyboardstand@william-lee.com' %>
 								</a>
 							</li>
 						</ul>

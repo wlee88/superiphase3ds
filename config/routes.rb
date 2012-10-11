@@ -1,6 +1,6 @@
 Superiphase3ds::Application.routes.draw do
   get "static_pages/home"
-
+  
   match 'home' => 'static_pages#home', :as => :home
   
   root :to => 'static_pages#home'
