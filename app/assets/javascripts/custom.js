@@ -20,11 +20,11 @@ $(document).ready(function(){
     $('#myModal').modal('show');
   });
 
-  $('#pandatime').click(function() {
+ /* $('#pandatime').click(function() {
     $('#screen').hide();
     $('#screen').fadeIn('slow');
     $('#screen').css("background-image", "url(" + "http://superiphase3ds.heroku.com/assets/bg" +randomNumberBetween(0,8) + ".jpg"+ " )" );
-  });
+  });*/
 
   $('#derp').click(function() {
      $('#screen').hide();
